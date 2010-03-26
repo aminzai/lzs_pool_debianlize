@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+echo "Start Build autostart"
+USERS=$(cat /etc/passwd | grep bash | cut -d ":" -f 1)
+
+for u in $USERS
+do 
+
+    #get user home directory
+    UserHome=$(grep ${u} /etc/passwd | cut -d ":" -f 6)
+
+    #build user home autostart directory
+    UserHome_autostart=$UserHome/.config/autostart
+    
+    #Build Directory
+    mkdir -p $UserHome_autostart/
+
+cat > $UserHome_autostart/fusion-icon.desktop <<EOF
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Version=1.0
+Name=Compiz
+Name[zh_TW]=Compiz
+Exec=fusion-icon
+X-GNOME-Autostart-enabled=true
+EOF
+
+    chown -R ${u}.${u} ${UserHome_autostart}/
+
+done
+
+#END

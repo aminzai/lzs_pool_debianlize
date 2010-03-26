@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# from http://people.debian.org.tw/~chihchun/2010/02/06/config-trackpoing-on-linux/
+cat > /etc/udev/rules.d/90-trackpoint.rules <<EOF
+SUBSYSTEM=="serio", DRIVERS=="psmouse", ATTR{press_to_select}="0", ATTR{sensitivity}="250", ATTR{speed}="120"
+DEVPATH=="/devices/platform/i8042/serio1", ATTR{press_to_select}="0", ATTR{sensitivity}="250", ATTR{speed}="120"
+
+ACTION!="add|change", GOTO="xorg_trackpoint_end"
+KERNEL!="event*", GOTO="xorg_trackpoint_end"
+
+ENV{ID_PATH}!="platform-i8042-serio-1", GOTO="xorg_trackpoint_end"
+
+ENV{x11_options.EmulateWheel}="1"
+ENV{x11_options.EmulateWheelButton}="2"
+ENV{x11_options.XAxisMapping}="6 7"
+ENV{x11_options.Emulate3Buttons}="0"
+
+LABEL="xorg_trackpoint_end"
+EOF
