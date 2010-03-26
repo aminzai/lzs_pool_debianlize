@@ -1,0 +1,6 @@
+#pkg install list
+uboot-mkimage
+libncurses5-dev
+build-essential
+nfs-kernel-server
+tftpd-hpa
