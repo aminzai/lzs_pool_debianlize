@@ -1,0 +1,22 @@
+## A source list be added by Lazyscripts.
+
+## Ubuntu Fonts
+deb http://ppa.launchpad.net/fonts/ubuntu jaunty main
+
+## Please report any bug on https://bugs.launchpad.net/medibuntu/
+deb http://packages.medibuntu.org/ jaunty free non-free #Medibuntu - Ubuntu 9.10 "jaunty koala"
+#deb-src http://packages.medibuntu.org/ jaunty free non-free #Medibuntu (source) - Ubuntu 9.10 "jaunty koala"
+
+## Network-Manager - using latest version for fixing DSL connection bug.
+deb http://ppa.launchpad.net/network-manager/trunk/ubuntu jaunty main
+#deb-src http://ppa.launchpad.net/network-manager/trunk/ubuntu jaunty main
+
+## Google Deb Source
+deb http://dl.google.com/linux/deb/ stable main
+
+## Gnome Global Menu
+deb http://ppa.launchpad.net/globalmenu-team/ppa/ubuntu jaunty main
+#deb-src http://ppa.launchpad.net/globalmenu-team/ppa/ubuntu jaunty main
+
+## PlayOnLinux
+#deb http://deb.playonlinux.com/ jaunty main
