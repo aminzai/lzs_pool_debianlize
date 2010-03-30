@@ -1,0 +1,18 @@
+#!/usr/bin/python
+import platform
+import os
+
+from lazyscripts import pkgmgr
+
+distro = platform.dist()
+
+if distro[0] not in ('Ubuntu','Debian'):	exit(1)
+o = pkgmgr.get_pkgmgr(distro[0])
+if not o:	exit(1)
+
+if 'i686' == platform.machine():
+	pkgname = "w32codecs"
+else:
+	pkgname = "w64codecs"
+
+os.system(o.make_cmd('install', pkgname))

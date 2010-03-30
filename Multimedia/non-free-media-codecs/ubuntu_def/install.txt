@@ -1,0 +1,3 @@
+#pkg install list
+non-free-codecs
+libdvdcss2
