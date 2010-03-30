@@ -1,4 +1,0 @@
-#pkg install list
-p7zip 
-unrar 
-rar
