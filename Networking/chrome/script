@@ -1,12 +1,23 @@
 #!/bin/bash
 
-wget https://dl-ssl.google.com/linux/linux_signing_key.pub
+#wget https://dl-ssl.google.com/linux/linux_signing_key.pub
 
-apt-key add linux_signing_key.pub
+#apt-key add linux_signing_key.pub
 
-echo "deb http://dl.google.com/linux/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+#echo "deb http://dl.google.com/linux/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
 
-apt-get update
+#apt-get update
 
-apt-get install google-chrome-beta
+#apt-get install google-chrome-beta
 
+case $PLAT_NAME in
+        "i386")
+        ./download-install Google_Chrome "http://dl.google.com/dl/linux/direct/google-chrome-beta_current_i386.deb"
+        ;;
+        "x86_64")
+        ./download-install Google_Chrome "http://dl.google.com/dl/linux/direct/google-chrome-beta_current_amd64.deb"
+        ;;
+        *)
+        echo "Sorry, Lazyscripts not support $PLAT_NAME"
+        ;;
+esac
