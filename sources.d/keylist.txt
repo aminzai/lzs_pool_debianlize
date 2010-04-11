@@ -2,3 +2,9 @@
 [Download]
 urls = https://dl-ssl.google.com/linux/linux_signing_key.pub
 
+[keyserver keyserver.ubuntu.com]
+url = keyserver.ubuntu.com
+ids = 248DD1EEBC8EBFE8,
+      7889D725DA6DEEAA,
+      6AF0E1940624A220
+
