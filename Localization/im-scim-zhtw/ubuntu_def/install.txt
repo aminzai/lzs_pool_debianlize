@@ -1,0 +1,15 @@
+#pkg install list
+scim-uim
+scim-chewing
+scim-pinyin
+scim-hangul
+scim-m17n
+scim-prime
+scim-anthy
+scim-skk
+scim-canna
+scim-tables-additional
+scim-tables-ja
+scim-tables-ko
+scim-tables-zh
+scim-thai
