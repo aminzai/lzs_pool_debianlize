@@ -1,0 +1,6 @@
+#pkg install list
+compiz fusion-icon 
+compizconfig-settings-manager
+compiz-fusion-plugins-main 
+compiz-fusion-plugins-extra
+emerald
