@@ -1,0 +1,4 @@
+#pkg install list
+stellarium
+stellarium-data
+ttf-droid

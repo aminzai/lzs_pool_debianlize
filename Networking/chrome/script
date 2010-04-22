@@ -1,14 +1,5 @@
 #!/bin/bash
-
-#wget https://dl-ssl.google.com/linux/linux_signing_key.pub
-
-#apt-key add linux_signing_key.pub
-
-#echo "deb http://dl.google.com/linux/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
-
-#apt-get update
-
-#apt-get install google-chrome-beta
+source $LIB_ROOT/shlib.bash
 
 case $PLAT_NAME in
         "i386")

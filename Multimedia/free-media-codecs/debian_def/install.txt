@@ -1,0 +1,6 @@
+#pkg install list
+gstreamer0.10-plugins-ugly 
+gstreamer0.10-plugins-bad
+gstreamer0.10-plugins-ugly-multiverse 
+gstreamer0.10-pitfdll 
+gstreamer0.10-plugins-bad-multiverse

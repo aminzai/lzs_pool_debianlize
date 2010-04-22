@@ -1,0 +1,5 @@
+#pkg install list
+mplayer
+smplayer
+vlc
+realplay
