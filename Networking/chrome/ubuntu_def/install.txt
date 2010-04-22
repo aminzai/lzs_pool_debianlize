@@ -1,2 +1,1 @@
 #pkg install list
-google-chrome-beta
