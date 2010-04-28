@@ -28,3 +28,23 @@ case $(getconf LONG_BIT) in
     export PLAT_NAME="x86_64"
 ;;
 esac
+
+################################################
+# Param:    USERS
+# Describe: Get all user id
+################################################
+export USERS=$(cat /etc/passwd | grep bash | cut -d ":" -f 1)
+
+################################################
+# Param:    GET_USER_HOME
+# Describe: Get user's home directory
+# Example: GET_USER_HOME userid
+# Return: User_Home
+################################################
+function GET_USER_HOME
+{
+    export User_Home=$(grep $1 /etc/passwd | cut -d ":" -f 6)
+}
+
+
+

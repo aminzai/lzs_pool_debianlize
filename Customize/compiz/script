@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 echo "Start Build autostart"
-USERS=$(cat /etc/passwd | grep bash | cut -d ":" -f 1)
+#USERS=$(cat /etc/passwd | grep bash | cut -d ":" -f 1)
+source $LIB_ROOT/shlib.bash
 
 for u in $USERS
 do 

@@ -1,3 +1,4 @@
 #pkg install list
 ttf-droid
 ttf-wqy-zenhei
+ttf-wqy-microhei
