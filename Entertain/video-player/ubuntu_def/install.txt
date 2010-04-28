@@ -2,4 +2,3 @@
 mplayer
 smplayer
 vlc
-realplay
