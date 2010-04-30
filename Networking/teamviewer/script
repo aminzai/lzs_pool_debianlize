@@ -1,0 +1,16 @@
+#!/bin/bash
+source $LIB_ROOT/shlib.bash
+
+case $PLAT_NAME in
+        "i386")
+            $WGET "http://www.teamviewer.com/download/teamviewer_linux.deb"
+            dpkg -i "teamviewer_linux.deb" 
+        ;;
+        "x86_64")
+            $WGET "http://www.teamviewer.com/download/teamviewer_linux_x64.deb"
+            dpkg -i "teamviewer_linux_x64.deb" 
+        ;;
+        *)
+            echo "Sorry, Lazyscripts not support $PLAT_NAME"
+        ;;
+esac
