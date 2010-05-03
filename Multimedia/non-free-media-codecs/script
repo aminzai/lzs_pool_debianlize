@@ -7,7 +7,7 @@ from lazyscripts import pkgmgr
 distro = platform.dist()
 
 if distro[0] not in ('Ubuntu','Debian'):	exit(1)
-o = pkgmgr.get_pkgmgr(distro[0])
+o = pkgmgr.get_pkgmgr(distro[0].lower())
 if not o:	exit(1)
 
 if 'i686' == platform.machine():
