@@ -1,6 +1,7 @@
 
 [Download]
 urls = https://dl-ssl.google.com/linux/linux_signing_key.pub
+        http://packages.medibuntu.org/pool/free/m/medibuntu-keyring/medibuntu-keyring_2008.04.20.dsc
 
 [keyserver keyserver.ubuntu.com]
 url = keyserver.ubuntu.com
