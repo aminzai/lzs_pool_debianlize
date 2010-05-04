@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wget http://ardownload.adobe.com/pub/adobe/reader/unix/8.x/8.1.7/cht/AdobeReader_cht-8.1.7-1.i386.deb
+dpkg -i AdobeReader_cht-8.1.7-1.i386.deb
+
