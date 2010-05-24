@@ -24,8 +24,5 @@ deb http://download.skype.com/linux/repos/debian/ stable non-free
 ## PlayOnLinux
 deb http://deb.playonlinux.com/ lucid main
 
-## Canonical partner
-deb http://archive.canonical.com/ubuntu lucid partner
-
 ## Dropbox
 deb http://linux.dropbox.com/ubuntu lucid main
