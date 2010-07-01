@@ -1,0 +1,28 @@
+## A source list be added by Lazyscripts.
+#
+# Canonical's partner source
+deb http://archive.canonical.com/ubuntu lucid partner
+deb-src http://archive.canonical.com/ubuntu lucid partner
+
+## Please report any bug on https://bugs.launchpad.net/medibuntu/
+deb http://packages.medibuntu.org/ lucid free non-free #Medibuntu
+#deb-src http://packages.medibuntu.org/ lucid free non-free #Medibuntu (source) - Ubuntu 9.10 "lucid koala"
+
+## Google Deb Source
+deb http://dl.google.com/linux/deb/ stable main
+
+## Gnome Global Menu
+deb http://ppa.launchpad.net/globalmenu-team/ppa/ubuntu lucid main
+#deb-src http://ppa.launchpad.net/globalmenu-team/ppa/ubuntu lucid main
+
+## Ubuntu Tweak
+deb http://ppa.launchpad.net/tualatrix/ubuntu lucid main
+
+## Skype
+deb http://download.skype.com/linux/repos/debian/ stable non-free
+
+## PlayOnLinux
+deb http://deb.playonlinux.com/ lucid main
+
+## Dropbox
+deb http://linux.dropbox.com/ubuntu lucid main
