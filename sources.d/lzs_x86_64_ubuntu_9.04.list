@@ -20,3 +20,7 @@ deb http://ppa.launchpad.net/globalmenu-team/ppa/ubuntu jaunty main
 
 ## PlayOnLinux
 #deb http://deb.playonlinux.com/ jaunty main
+
+## JDownloader
+deb http://ppa.launchpad.net/jd-team/jdownloader/ubuntu jaunty main 
+deb-src http://ppa.launchpad.net/jd-team/jdownloader/ubuntu jaunty main 

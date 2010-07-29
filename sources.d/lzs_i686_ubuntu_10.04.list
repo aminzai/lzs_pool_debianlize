@@ -26,3 +26,7 @@ deb http://deb.playonlinux.com/ lucid main
 
 ## Dropbox
 deb http://linux.dropbox.com/ubuntu lucid main
+
+## JDownloader
+deb http://ppa.launchpad.net/jd-team/jdownloader/ubuntu lucid main 
+deb-src http://ppa.launchpad.net/jd-team/jdownloader/ubuntu lucid main 

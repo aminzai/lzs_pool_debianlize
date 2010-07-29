@@ -27,3 +27,6 @@ deb http://download.skype.com/linux/repos/debian/ stable non-free
 ## Dropbox
 deb http://linux.dropbox.com/ubuntu lucid main                               
 
+## JDownloader
+deb http://ppa.launchpad.net/jd-team/jdownloader/ubuntu karmic main 
+deb-src http://ppa.launchpad.net/jd-team/jdownloader/ubuntu karmic main 
