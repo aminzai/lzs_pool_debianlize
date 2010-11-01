@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+import os
+import ConfigParser
+
+config = ConfigParser.ConfigParser()
+kupfer_config_path = os.path.join(os.getenv('HOME'),
+                                  '.config',
+                                  'kupfer',
+                                  'kupfer.cfg')
+config.read(kupfer_config_path)
+config.set('Kupfer', 'keybinding', '<Super>space')
+os.rename(kupfer_config_path, kupfer_config_path + '.bak')
+fp = open(kupfer_config_path, 'wb')
+config.write(fp)
+fp.close()
+
+
+
