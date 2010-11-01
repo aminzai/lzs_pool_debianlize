@@ -4,16 +4,18 @@ import os
 import ConfigParser
 
 config = ConfigParser.ConfigParser()
-kupfer_config_path = os.path.join(os.getenv('HOME'),
-                                  '.config',
-                                  'kupfer',
-                                  'kupfer.cfg')
-config.read(kupfer_config_path)
-config.set('Kupfer', 'keybinding', '<Super>space')
-os.rename(kupfer_config_path, kupfer_config_path + '.bak')
-fp = open(kupfer_config_path, 'wb')
-config.write(fp)
-fp.close()
+# kupfer_config_path = os.path.join(os.getenv('REAL_HOME'),
+#                                   '.config',
+#                                   'kupfer',
+#                                   'kupfer.cfg')
+kupfer_config_path = '/usr/share/kupfer/defaults.cfg'
+if os.path.exists(kupfer_config_path):
+    config.read(kupfer_config_path)
+    config.set('Kupfer', 'keybinding', '<Super>space')
+    os.rename(kupfer_config_path, kupfer_config_path + '.bak')
+    fp = open(kupfer_config_path, 'wb')
+    config.write(fp)
+    fp.close()
 
 
 
