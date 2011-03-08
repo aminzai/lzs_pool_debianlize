@@ -1,2 +1,2 @@
 #pkg install list
-kxmame
+gmameui
