@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+source $LIB_ROOT/shlib.bash
+
+function install_cwtex
+{
+echo '正在下載 cwTex 中文字型'
+
+BASE_URL="http://cwtex-q-fonts.googlecode.com/svn/trunk/ttf"
+mkdir -p ./temp/cwtex
+$WGET -P temp/cwtex "$BASE_URL/cwTeXQFangsong-Medium.ttf"
+$WGET -P temp/cwtex "$BASE_URL/cwTeXQHei-Bold.ttf"
+$WGET -P temp/cwtex "$BASE_URL/cwTeXQKai-Medium.ttf"
+$WGET -P temp/cwtex "$BASE_URL/cwTeXQMing-Medium.ttf"
+$WGET -P temp/cwtex "$BASE_URL/cwTeXQYuan-Medium.ttf"
+
+echo "正在安裝 cwTex 中文字型"
+cp -a temp/cwtex/*.ttf /usr/local/share/fonts/
+
+echo "更新系統字型庫中"
+fc-cache -fv
+}
+
+install_cwtex
