@@ -1,0 +1,32 @@
+## A source list be added by Lazyscripts.
+#
+# Canonical's partner source
+deb http://archive.canonical.com/ubuntu natty partner
+deb-src http://archive.canonical.com/ubuntu natty partner
+
+## Please report any bug on https://bugs.launchpad.net/medibuntu/
+deb http://packages.medibuntu.org/ natty free non-free #Medibuntu
+#deb-src http://packages.medibuntu.org/ natty free non-free #Medibuntu (source) 
+
+## Google Deb Source
+deb http://dl.google.com/linux/deb/ stable main
+
+## Gnome Global Menu
+deb http://ppa.launchpad.net/globalmenu-team/ppa/ubuntu natty main
+#deb-src http://ppa.launchpad.net/globalmenu-team/ppa/ubuntu natty main
+
+## Ubuntu Tweak
+deb http://ppa.launchpad.net/tualatrix/ubuntu natty main
+
+## Skype
+deb http://download.skype.com/linux/repos/debian/ stable non-free
+
+## PlayOnLinux
+deb http://deb.playonlinux.com/ natty main
+
+## Dropbox
+deb http://linux.dropbox.com/ubuntu natty main
+
+## JDownloader
+deb http://ppa.launchpad.net/jd-team/jdownloader/ubuntu natty main 
+deb-src http://ppa.launchpad.net/jd-team/jdownloader/ubuntu natty main 
