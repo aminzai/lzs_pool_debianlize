@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gsettings set com.canonical.Unity.Panel systray-whitelist "['all']"
