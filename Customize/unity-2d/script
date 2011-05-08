@@ -1,3 +1,0 @@
-#!/bin/bash
-
-gsettings set com.canonical.Unity.Panel systray-whitelist "['JavaEmbeddedFrame', 'Mumble', 'Wine', 'skype', 'gcin', 'shutter', 'dropbox', 'hp-systray', 'fusion-icon']"
