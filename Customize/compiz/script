@@ -3,6 +3,10 @@ echo "Start Build autostart"
 #USERS=$(cat /etc/passwd | grep bash | cut -d ":" -f 1)
 source $LIB_ROOT/shlib.bash
 
+
+if [ "$DISTRO_NAME" == "ubuntu" ] && [ "$DISTRO_VERSION" == "11.04" ]; then
+    exit
+else
 for u in $USERS
 do 
 
@@ -29,5 +33,6 @@ EOF
     chown -R ${u}.${u} ${UserHome_autostart}/
 
 done
+fi
 
 #END
