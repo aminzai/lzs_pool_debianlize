@@ -4,11 +4,11 @@ source $LIB_ROOT/shlib.bash
 case $PLAT_NAME in
         "i386")
         $WGET "http://dl.google.com/dl/linux/direct/google-chrome-beta_current_i386.deb"
-        dpkg -i "google-chrome-beta_current_i386.deb" 
+        dpkg -i "google-chrome-stable_current_i386.deb" 
         ;;
         "x86_64")
         $WGET "http://dl.google.com/dl/linux/direct/google-chrome-beta_current_amd64.deb"
-        dpkg -i "google-chrome-beta_current_amd64.deb" 
+        dpkg -i "google-chrome-stable_current_amd64.deb" 
         ;;
         *)
         echo "Sorry, Lazyscripts not support $PLAT_NAME"
